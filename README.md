@@ -12,7 +12,7 @@
 - id
 - class
 
-O id é a estratégia mais fácil para identificar o elemento.
+`` O id é a estratégia mais fácil para identificar o elemento.``
 - Em qualquer lugar do html
 - CTRL + F para buscar se o seletor existe/quantos existem
 - #descricaoDoId (se encontrar 1 of 1, ok podemos seguir com ele)
