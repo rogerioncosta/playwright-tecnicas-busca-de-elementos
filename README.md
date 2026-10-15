@@ -47,8 +47,9 @@ await page.fill('input[class*=nomeDaClasse]', 'O que deverá ser preenchido no i
 await page.locator('input[class*=nomeDaClasse]').fill('O que deverá ser preenchido no input');
 ```
 ou guardando o localizador em uma constante
+``Utilizar constantes é bom para controlar o comportamento de alguns elementos para criar padrões de projeto conforme a automação cresce`` 
 ```TS
 const inputName = page.locator('input[class*=nomeDaClasse]');
 await inputName.fill('O que deverá ser preenchido no input'); // só passa o que será preenchido no input
 ```
-``Utilizando constantes para controlar o comportamento de alguns elementos para criar padrões de projeto conforme a automação cresce`` 
+
