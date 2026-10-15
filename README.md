@@ -75,3 +75,8 @@ await page.click('css=button >> text="Texto do botão"'); // utiliza css selecto
 // .nome-da-classe do elemento pai Div, pegando o texto do elemento filho p
 await expect(page.locator('css=.nome-da-classe p >> text="Texto do parágrafo"')).toBeVisible();
 ```
+**ou**
+```TS
+const target = page.locator('.nomeDaClasse');
+await expect(target).toHaveText('Texto');
+```
