@@ -66,7 +66,9 @@ await inputName.press('Enter');
 await page.click('xpath=//button[contains(text(), "Texto do botão")]');
 ```
 **Recurso exclusivo do PW que substitui o xpath deixando o código mais simples e legível**
+```TS
 await page.click('css=button >> text="Texto do botão"); // utiliza css selector
+```
 
 **Pegando um texto de um parágrafo**
 ```TS
