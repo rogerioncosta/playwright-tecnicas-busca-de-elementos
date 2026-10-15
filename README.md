@@ -77,6 +77,7 @@ await expect(page.locator('css=.nome-da-classe p >> text="Texto do parágrafo"')
 ```
 **ou**
 ```TS
+// Para o caso de estar em uma tag pai sem filhos
 const target = page.locator('.nomeDaClasse');
 await expect(target).toHaveText('Texto');
 ```
