@@ -1,4 +1,4 @@
-# playwright-tecnicas-busca-de-elementos
+# playwright-tecnicas-para-busca-de-elementos
 ## Técnicas para buscar elementos no playwright (web)
 **Seletores CSS**
 - Rodar em modo debug para acompanhar cada passo (por padrão é headless, onde não vemos o navegador abrindo):
