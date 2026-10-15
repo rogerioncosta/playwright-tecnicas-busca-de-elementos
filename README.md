@@ -20,7 +20,7 @@ O id é a estratégia mais fácil para identificar o elemento.
   ```TS
   await page.fill('#descricaoDoId', 'O que deverá ser preenchido no input');
   ```
-**Quando temos o ID**
+**Quando não temos o ID**
 - Buscando pelo placeholder
   - input[placeholder="Descricao do placeholder"]
   ```TS
