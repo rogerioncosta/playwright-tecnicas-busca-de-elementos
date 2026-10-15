@@ -60,7 +60,7 @@ await inputName.press('Enter');
 
 **Utilizando Xpath quando não temos outras propriedades, ou elas podem mudar totalmente após nova versão**
 - //button[text()="Texto do botao"]
-- **Se não encontrar**
+**Se não encontrar**
 - //button[contains(text(), "Texto do botão")]
 ```TS
 await page.click('xpath=//button[contains(text(), "Texto do botão")]');
