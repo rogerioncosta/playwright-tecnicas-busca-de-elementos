@@ -6,7 +6,7 @@
 - Rodar em modo onde o navegador abre como um usuário normal acessando
   - npx playwright test test/nome-do-teste.spec.ts --headed
 
-### Pegar a tag: input, button, etc... e olhar suas propriedades:
+**Pegar a tag: input, button, etc... e olhar suas propriedades:**
 - placeholder: traz um texto informativo
 - type: text
 - id
@@ -52,4 +52,16 @@ ou guardando o localizador em uma constante
 const inputName = page.locator('input[class*=nomeDaClasse]');
 await inputName.fill('O que deverá ser preenchido no input'); // só passa o que será preenchido no input
 ```
+**Submetendo formulário simulando Enter sem clicar no botão de submissão**
+```TS
+await inputName.press('Enter');
+```
+>[!Note] Porém, o melhor é inspecionar o elemento e clicar no botão.
 
+**Utilizando Xpath quando não temos outras propriedades, ou elas podem mudar totalmente após nova versão**
+- //button[text()="Texto do botao"]
+- **Se não encontrar**
+- //button[contains(text(), "Texto do botão")]
+```TS
+await page.click('xpath=//button[contains(text(), "Texto do botão")]');
+```
