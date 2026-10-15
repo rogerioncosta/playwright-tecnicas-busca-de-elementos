@@ -59,7 +59,7 @@ await inputName.press('Enter');
 >[!Note] Porém, o melhor é inspecionar o elemento e clicar no botão.
 
 **Utilizando Xpath quando não temos outras propriedades, ou elas podem mudar totalmente após nova versão**
-- //button[text()="Texto do botao"]
+- //button[text()="Texto do botao"]  
 **Se não encontrar**
 - //button[contains(text(), "Texto do botão")]
 ```TS
