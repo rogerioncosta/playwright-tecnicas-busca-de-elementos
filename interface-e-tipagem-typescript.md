@@ -19,9 +19,11 @@ export interface NameModel {
 ```
 ``meu-teste.spec.ts``
 ```TS
+import { test, expect } from '@playwright/test';
+
 import { nameModel } from './fixtures/name.model';
 
-teste('Caso de teste', async ({ page, request }) => {
+test('Caso de teste', async ({ page, request }) => {
   const model: NameModel = {
     name: 'Texto da string',
     is_done: false
