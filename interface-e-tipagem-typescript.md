@@ -21,7 +21,7 @@ export interface NameModel {
 ```TS
 import { test, expect } from '@playwright/test';
 
-import { nameModel } from './fixtures/name.model';
+import { NameModel } from './fixtures/name.model';
 
 test('Caso de teste', async ({ page, request }) => {
   const model: NameModel = {
